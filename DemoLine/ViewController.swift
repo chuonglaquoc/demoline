@@ -22,22 +22,9 @@ class ViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        self.customView(view: self.pickupView)
-        self.customButton(button: self.btnNeedHelp)
-        let image = UIImage(named: "Header")
-        let imgView = UIImageView(image: image)
-        self.topView.addSubview(imgView)
-        self.customView(view: self.yourLastTripView)
-    }
-    
-    override func viewDidLayoutSubviews() {
-//        let rectShape = CAShapeLayer()
-//        rectShape.path = UIBezierPath(roundedRect: self.buttonSubmit.bounds, byRoundingCorners: [.bottomLeft , .bottomRight], cornerRadii: CGSize(width: 5, height: 5)).cgPath
-//        //        self.buttonSubmit.layer.backgroundColor = UIColor(red: 21, green: 179, blue: 240, alpha: 1.0).cgColor
-////                self.buttonSubmit.layer.addSublayer(rectShape)
-//        self.buttonSubmit.layer.mask = rectShape
+        customView(view: self.pickupView)
+        customButton(button: self.btnNeedHelp)
+        customView(view: self.yourLastTripView)
     }
     
     func customView(view:UIView) -> Void {
@@ -56,11 +43,6 @@ class ViewController: UIViewController{
         button.layer.borderWidth = 1
         button.layer.borderColor = UIColor.gray.cgColor
         button.tintColor = UIColor.gray
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 }
