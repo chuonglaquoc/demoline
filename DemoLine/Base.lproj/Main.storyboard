@@ -364,7 +364,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="button" destination="w10-2S-wib" id="3GB-cR-Iwu"/>
                         <outlet property="pickUpView" destination="cTJ-2e-uuy" id="1bg-w1-QCt"/>
                     </connections>
                 </viewController>
@@ -387,54 +386,12 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LOa-hd-qfc">
                                 <rect key="frame" x="16" y="248" width="343" height="170"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYq-XV-fBX" customClass="HBorderButton" customModule="DemoLine" customModuleProvider="target">
-                                        <rect key="frame" x="182" y="100" width="154" height="40"/>
-                                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="xWW-Mc-Sag"/>
-                                        </constraints>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="CANCEL">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="6"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="cancelRequest:" destination="lEG-lx-J9K" eventType="touchUpInside" id="SU0-EY-UIL"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HsZ-8p-DLF" customClass="HBorderButton" customModule="DemoLine" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="100" width="153.5" height="40"/>
-                                        <color key="backgroundColor" red="0.19215686269999999" green="0.73725490199999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="m2C-Cj-uHY"/>
-                                        </constraints>
-                                        <state key="normal" title="ACCEPT">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="6"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="acceptRequest:" destination="lEG-lx-J9K" eventType="touchUpInside" id="eu7-vp-Bx8"/>
-                                        </connections>
-                                    </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="cD6-BW-KS5" customClass="HImageView" customModule="DemoLine" customModuleProvider="target">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="cD6-BW-KS5">
                                         <rect key="frame" x="31" y="16" width="60" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="60" id="KG4-LM-bDD"/>
                                             <constraint firstAttribute="height" constant="60" id="TT8-sj-QQH"/>
                                         </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="30"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NGUYỄN MINH THÀNH CÔNG" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5HK-oO-k62">
                                         <rect key="frame" x="99" y="22" width="208" height="18"/>
@@ -448,23 +405,46 @@
                                         <color key="textColor" red="0.19215686274509802" green="0.73725490196078436" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TyQ-gn-ccb">
+                                        <rect key="frame" x="8" y="99" width="149" height="34"/>
+                                        <color key="backgroundColor" red="0.1647058824" green="0.65490196079999996" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="5FV-Ff-Nte"/>
+                                        </constraints>
+                                        <state key="normal" title="ACCEPT">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CG3-to-wLl">
+                                        <rect key="frame" x="186" y="99" width="149" height="35"/>
+                                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="yBs-bg-mgv"/>
+                                        </constraints>
+                                        <state key="normal" title="CANCEL">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelRequest:" destination="lEG-lx-J9K" eventType="touchUpInside" id="AbY-zK-3Zp"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="yYq-XV-fBX" secondAttribute="trailing" constant="7" id="4cj-mG-zD5"/>
+                                    <constraint firstItem="CG3-to-wLl" firstAttribute="leading" secondItem="LOa-hd-qfc" secondAttribute="centerX" constant="15" id="Cy5-gE-hXP"/>
+                                    <constraint firstItem="TyQ-gn-ccb" firstAttribute="top" secondItem="cD6-BW-KS5" secondAttribute="bottom" constant="23" id="FAw-BX-fJE"/>
+                                    <constraint firstAttribute="trailing" secondItem="CG3-to-wLl" secondAttribute="trailing" constant="8" id="GCK-Qs-R4e"/>
                                     <constraint firstAttribute="height" constant="170" id="Hop-9j-Hf3"/>
-                                    <constraint firstItem="HsZ-8p-DLF" firstAttribute="leading" secondItem="LOa-hd-qfc" secondAttribute="leading" constant="8" id="IXi-KM-had"/>
+                                    <constraint firstItem="TyQ-gn-ccb" firstAttribute="leading" secondItem="LOa-hd-qfc" secondAttribute="leading" constant="8" id="Mxl-Fa-o72"/>
+                                    <constraint firstAttribute="centerX" secondItem="TyQ-gn-ccb" secondAttribute="trailing" constant="15" id="NKE-Dj-1LB"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5HK-oO-k62" secondAttribute="trailing" constant="20" id="Pu0-AF-lti"/>
                                     <constraint firstItem="5HK-oO-k62" firstAttribute="top" secondItem="LOa-hd-qfc" secondAttribute="top" constant="22" id="RHL-H1-UB8"/>
                                     <constraint firstItem="cD6-BW-KS5" firstAttribute="top" secondItem="LOa-hd-qfc" secondAttribute="top" constant="16" id="SEU-26-nfu"/>
-                                    <constraint firstItem="yYq-XV-fBX" firstAttribute="leading" secondItem="LOa-hd-qfc" secondAttribute="centerX" constant="10" id="ZaW-gb-Pk5"/>
+                                    <constraint firstItem="CG3-to-wLl" firstAttribute="top" secondItem="TyQ-gn-ccb" secondAttribute="top" id="VuC-r4-eku"/>
                                     <constraint firstItem="MDP-If-JO5" firstAttribute="top" secondItem="5HK-oO-k62" secondAttribute="bottom" constant="2" id="bvg-LJ-Pdl"/>
                                     <constraint firstItem="5HK-oO-k62" firstAttribute="leading" secondItem="cD6-BW-KS5" secondAttribute="trailing" constant="8" id="fWd-QG-Wgc"/>
-                                    <constraint firstItem="HsZ-8p-DLF" firstAttribute="top" secondItem="cD6-BW-KS5" secondAttribute="bottom" constant="24" id="gjO-9f-Sjc"/>
                                     <constraint firstItem="MDP-If-JO5" firstAttribute="leading" secondItem="5HK-oO-k62" secondAttribute="leading" id="l5G-Qy-79C"/>
                                     <constraint firstItem="cD6-BW-KS5" firstAttribute="leading" secondItem="LOa-hd-qfc" secondAttribute="leading" constant="31" id="oEt-i1-zy1"/>
-                                    <constraint firstItem="yYq-XV-fBX" firstAttribute="top" secondItem="HsZ-8p-DLF" secondAttribute="top" id="rQm-1t-Was"/>
-                                    <constraint firstAttribute="centerX" secondItem="HsZ-8p-DLF" secondAttribute="trailing" constant="10" id="rvn-GZ-mUC"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -475,8 +455,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="acceptButton" destination="7yN-dl-Rf5" id="T78-tv-bnC"/>
-                        <outlet property="cancelButton" destination="7yN-dl-Rf5" id="1fJ-AX-XKU"/>
+                        <outlet property="acceptButton" destination="TyQ-gn-ccb" id="V8Z-wZ-ruD"/>
+                        <outlet property="cancelButton" destination="CG3-to-wLl" id="pVw-YX-v2n"/>
                         <outlet property="popView" destination="LOa-hd-qfc" id="Ket-Nb-6Cp"/>
                     </connections>
                 </viewController>

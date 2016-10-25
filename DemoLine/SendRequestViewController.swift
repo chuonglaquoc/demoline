@@ -11,7 +11,6 @@ import UIKit
 
 class SendRequestViewController: UIViewController {
     
-    @IBOutlet weak var button: UIButton!
     @IBOutlet weak var pickUpView: UIView!
     var popView: UIView!
     
@@ -26,12 +25,7 @@ class SendRequestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         customView(view: pickUpView)
-        
-    }
-    
-    func doAction() -> Void {
         
     }
     
