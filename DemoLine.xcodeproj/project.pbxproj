@@ -20,6 +20,9 @@
 		41ED1DAE1DBE141C008D66BC /* HBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ED1DAB1DBE141C008D66BC /* HBorderButton.swift */; };
 		41ED1DB01DBE1432008D66BC /* HImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ED1DAF1DBE1432008D66BC /* HImageView.swift */; };
 		830634EB1DBF4E6400A4561A /* SendRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830634EA1DBF4E6400A4561A /* SendRequestViewController.swift */; };
+		832AA1321DC08AE30081B5D6 /* SalesTaxesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832AA1311DC08AE30081B5D6 /* SalesTaxesViewController.swift */; };
+		832AA1341DC08B4B0081B5D6 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832AA1331DC08B4B0081B5D6 /* Product.swift */; };
+		832AA1361DC08B7E0081B5D6 /* TaxCate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832AA1351DC08B7E0081B5D6 /* TaxCate.swift */; };
 		832E1A551DBF5CD500A9D326 /* PopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832E1A541DBF5CD500A9D326 /* PopViewController.swift */; };
 		83AF844B1DBF503B004D4190 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF844A1DBF503B004D4190 /* Extensions.swift */; };
 		BA9454E896C2071C46AE26DA /* Pods_DemoLine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 195D9A12F8C2521EC72BABBD /* Pods_DemoLine.framework */; };
@@ -67,6 +70,9 @@
 		41ED1DAF1DBE1432008D66BC /* HImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HImageView.swift; sourceTree = "<group>"; };
 		449E66A27407E2C3DEAF90AC /* Pods-DemoLineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoLineTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoLineTests/Pods-DemoLineTests.release.xcconfig"; sourceTree = "<group>"; };
 		830634EA1DBF4E6400A4561A /* SendRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendRequestViewController.swift; sourceTree = "<group>"; };
+		832AA1311DC08AE30081B5D6 /* SalesTaxesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SalesTaxesViewController.swift; path = SalesTaxes/SalesTaxesViewController.swift; sourceTree = "<group>"; };
+		832AA1331DC08B4B0081B5D6 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		832AA1351DC08B7E0081B5D6 /* TaxCate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaxCate.swift; path = SalesTaxes/TaxCate.swift; sourceTree = "<group>"; };
 		832E1A541DBF5CD500A9D326 /* PopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopViewController.swift; sourceTree = "<group>"; };
 		83AF844A1DBF503B004D4190 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BA32A575CB78BE1D66A320AD /* Pods-DemoLine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoLine.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoLine/Pods-DemoLine.release.xcconfig"; sourceTree = "<group>"; };
@@ -164,6 +170,9 @@
 				41D4679E1DBDDF8D00ADD948 /* Info.plist */,
 				830634EA1DBF4E6400A4561A /* SendRequestViewController.swift */,
 				832E1A541DBF5CD500A9D326 /* PopViewController.swift */,
+				832AA1311DC08AE30081B5D6 /* SalesTaxesViewController.swift */,
+				832AA1331DC08B4B0081B5D6 /* Product.swift */,
+				832AA1351DC08B7E0081B5D6 /* TaxCate.swift */,
 			);
 			path = DemoLine;
 			sourceTree = "<group>";
@@ -473,9 +482,12 @@
 				832E1A551DBF5CD500A9D326 /* PopViewController.swift in Sources */,
 				830634EB1DBF4E6400A4561A /* SendRequestViewController.swift in Sources */,
 				41ED1DAD1DBE141C008D66BC /* HBorderView.swift in Sources */,
+				832AA1341DC08B4B0081B5D6 /* Product.swift in Sources */,
+				832AA1321DC08AE30081B5D6 /* SalesTaxesViewController.swift in Sources */,
 				83AF844B1DBF503B004D4190 /* Extensions.swift in Sources */,
 				41ED1DAE1DBE141C008D66BC /* HBorderButton.swift in Sources */,
 				41D467951DBDDF8D00ADD948 /* ViewController.swift in Sources */,
+				832AA1361DC08B7E0081B5D6 /* TaxCate.swift in Sources */,
 				41D467931DBDDF8D00ADD948 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

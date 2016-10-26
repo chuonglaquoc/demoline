@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11535.1" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wHo-np-XP5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11535.1" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xoI-yT-6qI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -463,6 +463,72 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uDa-0B-hxT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1685.5999999999999" y="134.48275862068968"/>
+        </scene>
+        <!--Sales Taxes View Controller-->
+        <scene sceneID="xgJ-tG-yKR">
+            <objects>
+                <viewController id="xoI-yT-6qI" customClass="SalesTaxesViewController" customModule="DemoLine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8B6-pm-hSD"/>
+                        <viewControllerLayoutGuide type="bottom" id="4RB-LI-9w3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rCJ-GU-FES">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qFP-tx-2pi">
+                                <rect key="frame" x="16" y="28" width="343" height="140"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="02S-HN-MmC"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aE9-Lh-zBR">
+                                <rect key="frame" x="16" y="194" width="343" height="140"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="vFU-XM-kzX"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7tT-SA-IEw">
+                                <rect key="frame" x="16" y="361" width="343" height="140"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="ZUY-2d-GMq"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aE9-Lh-zBR" firstAttribute="top" secondItem="qFP-tx-2pi" secondAttribute="bottom" constant="26" id="JmB-KR-YqG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7tT-SA-IEw" secondAttribute="trailing" id="QnS-IE-39w"/>
+                            <constraint firstItem="7tT-SA-IEw" firstAttribute="top" secondItem="aE9-Lh-zBR" secondAttribute="bottom" constant="27" id="SFP-e6-jE2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qFP-tx-2pi" secondAttribute="trailing" id="WlF-JM-Lkk"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="aE9-Lh-zBR" secondAttribute="leading" id="aFQ-pG-3bT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aE9-Lh-zBR" secondAttribute="trailing" id="h5h-hK-eqT"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="qFP-tx-2pi" secondAttribute="leading" id="j8h-ow-fCM"/>
+                            <constraint firstItem="qFP-tx-2pi" firstAttribute="top" secondItem="8B6-pm-hSD" secondAttribute="bottom" constant="8" id="rBk-Vd-rSb"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="7tT-SA-IEw" secondAttribute="leading" id="v07-ia-UkJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textview1" destination="qFP-tx-2pi" id="l93-lC-fjO"/>
+                        <outlet property="textview2" destination="aE9-Lh-zBR" id="cum-hB-7Sy"/>
+                        <outlet property="textview3" destination="7tT-SA-IEw" id="b2b-qQ-Om7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tr8-Cs-DhP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2471.1999999999998" y="122.78860569715144"/>
         </scene>
     </scenes>
     <resources>
